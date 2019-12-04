@@ -1,0 +1,374 @@
+1
+
+   Abaqus 6.13-2                                  Date 20-ноя-2019   Time 13:52:03
+   
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *Heading
+  *Node
+  *Nset, nset=ASSEMBLY_BASE-1_BASE-1-REFPT_
+  *Nset, nset=ASSEMBLY_BASE-1_SET-1
+  *Node
+  *Element, type=CAX4R
+  *Nset, nset=ASSEMBLY_DET-1_SET-1
+  *Nset, nset=ASSEMBLY_DET-1_SET-2
+  *Elset, elset=ASSEMBLY_DET-1_SET-1
+  *Elset, elset=ASSEMBLY_DET-1__CONT1_S3
+  *Elset, elset=ASSEMBLY_DET-1__CONT2_S1
+  *Node
+  *Element, type=CAX3
+  *Element, type=CAX4R
+  *Element, type=CAX3
+  *Element, type=CAX4R
+  *Nset, nset=ASSEMBLY_PLATE-1_FORCE
+  *Nset, nset=ASSEMBLY_PLATE-1_FORCE1
+  *Nset, nset=ASSEMBLY_PLATE-1_SET-1
+  *Elset, elset=ASSEMBLY_PLATE-1_FORCE1
+  *Elset, elset=ASSEMBLY_PLATE-1_SET-1
+  *Elset, elset=ASSEMBLY_PLATE-1__CONT_S1
+  *Elset, elset=ASSEMBLY_PLATE-1__CONT_S2
+  *Elset, elset=ASSEMBLY_PLATE-1__CONT_S4
+  *Nset, nset=ASSEMBLY__PICKEDSET11
+  *Elset, elset=ASSEMBLY__PICKEDSET11
+  *rigidbody, refnode=ASSEMBLY_BASE-1_BASE-1-REFPT_, analyticalsurface=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-2, type=SURFACETOSURFACE
+  *rigidbody, refnode=ASSEMBLY_BASE-1_BASE-1-REFPT_, analyticalsurface=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *rigidbody, refnode=ASSEMBLY_BASE-1_BASE-1-REFPT_, analyticalsurface=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *rigidbody, refnode=ASSEMBLY_BASE-1_BASE-1-REFPT_, analyticalsurface=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-2, type=SURFACETOSURFACE
+  *surface, type=SEGMENTS, name=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *surface, type=ELEMENT, name=ASSEMBLY_DET-1_CONT1
+  *surface, type=ELEMENT, name=ASSEMBLY_DET-1_CONT2
+  *surface, type=ELEMENT, name=ASSEMBLY_PLATE-1_CONT
+  *surface, type=SEGMENTS, name=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *surface, type=ELEMENT, name=ASSEMBLY_DET-1_CONT1
+  *surface, type=ELEMENT, name=ASSEMBLY_DET-1_CONT2
+  *surface, type=ELEMENT, name=ASSEMBLY_PLATE-1_CONT
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-2, type=SURFACETOSURFACE
+  *surfaceinteraction, name=INTPROP-1
+  *surfaceinteraction, name=INTPROP-2
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-2, type=SURFACETOSURFACE
+  *rigidbody, refnode=ASSEMBLY_BASE-1_BASE-1-REFPT_, analyticalsurface=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *solidsection, elset=ASSEMBLY_DET-1_SET-1, material=MAT1
+  *solidsection, elset=ASSEMBLY_PLATE-1_SET-1, material=MAT2
+  *material, name=MAT1
+  *elastic
+  *plastic
+  *material, name=MAT2
+  *elastic
+  *plastic
+  *surfaceinteraction, name=INTPROP-1
+  *friction, sliptolerance=0.005
+  *surfaceinteraction, name=INTPROP-2
+  *friction, sliptolerance=0.005
+  *surfaceinteraction, name=INTPROP-1
+  *surfaceinteraction, name=INTPROP-2
+  *solidsection, elset=ASSEMBLY_DET-1_SET-1, material=MAT1
+  *solidsection, elset=ASSEMBLY_PLATE-1_SET-1, material=MAT2
+  *rigidbody, refnode=ASSEMBLY_BASE-1_BASE-1-REFPT_, analyticalsurface=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *rigidbody, refnode=ASSEMBLY_BASE-1_BASE-1-REFPT_, analyticalsurface=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *boundary
+  *boundary
+  *boundary
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+
+ ***WARNING: PATH BASED TRACKING IS DEFINED IN CONTACT PAIR 
+             (ASSEMBLY_DET-1_CONT2,ASSEMBLY_BASE-1_RIGIDSURFACE_). PATH BASED 
+             TRACKING CANNOT BE USED WITH ANALYTICAL RIGID MASTER SURFACES, THE 
+             STATE BASED TRACKING ALGORITHM WILL BE USED INSTEAD.
+  *contactpair, interaction=INTPROP-2, type=SURFACETOSURFACE
+  *solidsection, elset=ASSEMBLY_DET-1_SET-1, material=MAT1
+  *solidsection, elset=ASSEMBLY_PLATE-1_SET-1, material=MAT2
+  *surfaceinteraction, name=INTPROP-1
+  *surfaceinteraction, name=INTPROP-2
+  *contactpair, interaction=INTPROP-1, type=SURFACETOSURFACE
+  *contactpair, interaction=INTPROP-2, type=SURFACETOSURFACE
+  *rigidbody, refnode=ASSEMBLY_BASE-1_BASE-1-REFPT_, analyticalsurface=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *surface, type=SEGMENTS, name=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *surface, type=ELEMENT, name=ASSEMBLY_DET-1_CONT1
+  *surface, type=ELEMENT, name=ASSEMBLY_DET-1_CONT2
+  *surface, type=ELEMENT, name=ASSEMBLY_PLATE-1_CONT
+  *output, field, variable=PRESELECT
+  *output, history
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history
+  *output, history, variable=PRESELECT
+  *rigidbody, refnode=ASSEMBLY_BASE-1_BASE-1-REFPT_, analyticalsurface=ASSEMBLY_BASE-1_RIGIDSURFACE_
+  *Step, name=Step-1, nlgeom=YES, inc=1000
+  *output, field, variable=PRESELECT
+  *output, history
+  *output, history, variable=PRESELECT
+  *Step, name=Step-2, nlgeom=YES, inc=1000
+  *output, field, variable=PRESELECT
+  *output, history
+  *output, history, variable=PRESELECT
+  *Step, name=Step-1, nlgeom=YES, inc=1000
+  *Step, name=Step-2, nlgeom=YES, inc=1000
+  *Step, name=Step-1, nlgeom=YES, inc=1000
+  *static
+  *boundary
+  *output, field, variable=PRESELECT
+  *output, history
+  *nodeoutput, nset=ASSEMBLY_PLATE-1_FORCE
+  *output, history, variable=PRESELECT
+  *endstep
+
+ ***WARNING: OUTPUT REQUEST RF3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+
+ ***WARNING: OUTPUT REQUEST RM1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+
+ ***WARNING: OUTPUT REQUEST RM2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+
+ ***WARNING: OUTPUT REQUEST U3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+
+ ***WARNING: OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+
+ ***WARNING: OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+  *Step, name=Step-2, nlgeom=YES, inc=1000
+  razgruzka                                                                       
+  *static
+  *boundary
+  *boundary
+  *output, field, variable=PRESELECT
+  *output, history
+  *nodeoutput, nset=ASSEMBLY_PLATE-1_FORCE
+  *output, history, variable=PRESELECT
+  *endstep
+
+ ***WARNING: OUTPUT REQUEST RF3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+
+ ***WARNING: OUTPUT REQUEST RM1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+
+ ***WARNING: OUTPUT REQUEST RM2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+
+ ***WARNING: OUTPUT REQUEST U3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+
+ ***WARNING: OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+
+ ***WARNING: OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF 
+             THAT IS NOT ACTIVE
+  *boundary
+  *boundary
+  *Step, name=Step-1, nlgeom=YES, inc=1000
+  *static
+  *boundary
+  *endstep
+  *Step, name=Step-2, nlgeom=YES, inc=1000
+  *static
+  *boundary
+  *boundary
+  *endstep
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                   828
+          NUMBER OF ELEMENTS DEFINED BY THE USER AND *TIE         787
+          NUMBER OF INTERNAL ELEMENTS GENERATED FOR CONTACT        40
+          NUMBER OF NODES IS                                      961
+          NUMBER OF NODES DEFINED BY THE USER                     881
+          NUMBER OF INTERNAL NODES GENERATED BY THE PROGRAM        80
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                 1843
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =  0.20000    
+       SYSTEM TIME (SEC)    =  0.10000    
+       TOTAL CPU TIME (SEC) =  0.30000    
+       WALLCLOCK TIME (SEC) =          0
+1
+
+   Abaqus 6.13-2                                  Date 20-ноя-2019   Time 13:52:04
+   
+
+                                                                                               STEP    1  INCREMENT    1
+                                                                                          TIME COMPLETED IN THIS STEP   0.00    
+
+
+                        S T E P       1     S T A T I C   A N A L Y S I S
+
+
+                                                                                          
+
+     AUTOMATIC TIME CONTROL WITH -
+          A SUGGESTED INITIAL TIME INCREMENT OF                1.000E-02
+          AND A TOTAL TIME PERIOD OF                            1.00    
+          THE MINIMUM TIME INCREMENT ALLOWED IS                1.000E-05
+          THE MAXIMUM TIME INCREMENT ALLOWED IS                 1.00    
+
+     LINEAR EQUATION SOLVER TYPE         DIRECT SPARSE
+
+          LARGE DISPLACEMENT THEORY WILL BE USED
+
+          UNSYMMETRIC MATRIX STORAGE AND SOLUTION WILL BE USED
+  
+                   M E M O R Y   E S T I M A T E
+  
+ PROCESS      FLOATING PT       MINIMUM MEMORY        MEMORY TO
+              OPERATIONS           REQUIRED          MINIMIZE I/O
+             PER ITERATION         (MBYTES)           (MBYTES)
+  
+     1         4.18E+006               17                 26
+  
+ NOTE:
+      (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
+          THE MEMORY REQUIREMENT PRINTED HERE CAN ONLY BE VIEWED AS A GENERAL GUIDELINE BASED ON THE BEST
+          KNOWLEDGE AVAILABLE AT THE BEGINNING OF A STEP BEFORE THE SOLUTION PROCESS HAS BEGUN.
+      (2) THE ESTIMATE IS NORMALLY UPDATED AT THE BEGINNING OF EVERY STEP. IT IS THE MAXIMUM VALUE OF THE
+          ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP OF THE ANALYSIS, WITH UNSYMMETRIC SOLUTION TAKEN
+          INTO ACCOUNT IF APPLICABLE. 
+      (3) SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE FIRST ITERATION OF THE 
+          CURRENT STEP, THE MEMORY ESTIMATE MIGHT BE SIGNIFICANTLY DIFFERENT THAN ACTUAL USAGE FOR 
+          PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN
+          THE SAME STEP). EXAMPLES ARE: PROBLEMS WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL
+          CHANGE, PROBLEMS WITH BOTH STATIC STEP AND STEADY STATE DYNAMIC PROCEDURES WHERE ACOUSTIC 
+          ELEMENTS WILL ONLY BE ACTIVATED IN THE STEADY STATE DYNAMIC STEPS.
+      (4) FOR MULTI-PROCESS EXECUTION, THE ESTIMATED VALUE OF FLOATING POINT OPERATIONS FOR EACH PROCESS
+          IS BASED ON AN INITIAL SCHEDULING OF OPERATIONS AND MIGHT NOT REFLECT THE ACTUAL FLOATING 
+          POINT OPERATIONS COMPLETED ON EACH PROCESS. OPERATIONS ARE DYNAMICALLY BALANCED DURING EXECUTION, 
+          SO THE ACTUAL BALANCE OF OPERATIONS BETWEEN PROCESSES IS EXPECTED TO BE BETTER THAN THE ESTIMATE
+          PRINTED HERE.
+      (5) THE UPPER LIMIT OF MEMORY THAT CAN BE ALLOCATED BY ABAQUS WILL IN GENERAL DEPEND ON THE VALUE OF
+          THE "MEMORY" PARAMETER AND THE AMOUNT OF PHYSICAL MEMORY AVAILABLE ON THE MACHINE. PLEASE SEE
+          THE "ABAQUS ANALYSIS USER'S MANUAL" FOR MORE DETAILS. THE ACTUAL USAGE OF MEMORY AND OF DISK
+          SPACE FOR SCRATCH DATA WILL DEPEND ON THIS UPPER LIMIT AS WELL AS THE MEMORY REQUIRED TO MINIMIZE
+          I/O. IF THE MEMORY UPPER LIMIT IS GREATER THAN THE MEMORY REQUIRED TO MINIMIZE I/O, THEN THE ACTUAL
+          MEMORY USAGE WILL BE CLOSE TO THE ESTIMATED "MEMORY TO MINIMIZE I/O" VALUE, AND THE SCRATCH DISK
+          USAGE WILL BE CLOSE-TO-ZERO; OTHERWISE, THE ACTUAL MEMORY USED WILL BE CLOSE TO THE PREVIOUSLY
+          MENTIONED MEMORY LIMIT, AND THE SCRATCH DISK USAGE WILL BE ROUGHLY PROPORTIONAL TO THE DIFFERENCE
+          BETWEEN THE ESTIMATED "MEMORY TO MINIMIZE I/O" AND THE MEMORY UPPER LIMIT. HOWEVER ACCURATE
+          ESTIMATE OF THE SCRATCH DISK SPACE IS NOT POSSIBLE.
+      (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
+1
+
+   Abaqus 6.13-2                                  Date 20-ноя-2019   Time 13:52:08
+   
+
+                                                                                               STEP    2  INCREMENT    1
+     razgruzka                                                                            TIME COMPLETED IN THIS STEP   0.00    
+
+
+                        S T E P       2     S T A T I C   A N A L Y S I S
+
+
+          razgruzka                                                                       
+
+     AUTOMATIC TIME CONTROL WITH -
+          A SUGGESTED INITIAL TIME INCREMENT OF                1.000E-02
+          AND A TOTAL TIME PERIOD OF                            1.00    
+          THE MINIMUM TIME INCREMENT ALLOWED IS                1.000E-05
+          THE MAXIMUM TIME INCREMENT ALLOWED IS                1.000E-02
+
+     LINEAR EQUATION SOLVER TYPE         DIRECT SPARSE
+
+          LARGE DISPLACEMENT THEORY WILL BE USED
+
+          UNSYMMETRIC MATRIX STORAGE AND SOLUTION WILL BE USED
+  
+                   M E M O R Y   E S T I M A T E
+  
+ PROCESS      FLOATING PT       MINIMUM MEMORY        MEMORY TO
+              OPERATIONS           REQUIRED          MINIMIZE I/O
+             PER ITERATION         (MBYTES)           (MBYTES)
+  
+     1         4.25E+006               17                 26
+  
+ NOTE:
+      (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
+          THE MEMORY REQUIREMENT PRINTED HERE CAN ONLY BE VIEWED AS A GENERAL GUIDELINE BASED ON THE BEST
+          KNOWLEDGE AVAILABLE AT THE BEGINNING OF A STEP BEFORE THE SOLUTION PROCESS HAS BEGUN.
+      (2) THE ESTIMATE IS NORMALLY UPDATED AT THE BEGINNING OF EVERY STEP. IT IS THE MAXIMUM VALUE OF THE
+          ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP OF THE ANALYSIS, WITH UNSYMMETRIC SOLUTION TAKEN
+          INTO ACCOUNT IF APPLICABLE. 
+      (3) SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE FIRST ITERATION OF THE 
+          CURRENT STEP, THE MEMORY ESTIMATE MIGHT BE SIGNIFICANTLY DIFFERENT THAN ACTUAL USAGE FOR 
+          PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN
+          THE SAME STEP). EXAMPLES ARE: PROBLEMS WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL
+          CHANGE, PROBLEMS WITH BOTH STATIC STEP AND STEADY STATE DYNAMIC PROCEDURES WHERE ACOUSTIC 
+          ELEMENTS WILL ONLY BE ACTIVATED IN THE STEADY STATE DYNAMIC STEPS.
+      (4) FOR MULTI-PROCESS EXECUTION, THE ESTIMATED VALUE OF FLOATING POINT OPERATIONS FOR EACH PROCESS
+          IS BASED ON AN INITIAL SCHEDULING OF OPERATIONS AND MIGHT NOT REFLECT THE ACTUAL FLOATING 
+          POINT OPERATIONS COMPLETED ON EACH PROCESS. OPERATIONS ARE DYNAMICALLY BALANCED DURING EXECUTION, 
+          SO THE ACTUAL BALANCE OF OPERATIONS BETWEEN PROCESSES IS EXPECTED TO BE BETTER THAN THE ESTIMATE
+          PRINTED HERE.
+      (5) THE UPPER LIMIT OF MEMORY THAT CAN BE ALLOCATED BY ABAQUS WILL IN GENERAL DEPEND ON THE VALUE OF
+          THE "MEMORY" PARAMETER AND THE AMOUNT OF PHYSICAL MEMORY AVAILABLE ON THE MACHINE. PLEASE SEE
+          THE "ABAQUS ANALYSIS USER'S MANUAL" FOR MORE DETAILS. THE ACTUAL USAGE OF MEMORY AND OF DISK
+          SPACE FOR SCRATCH DATA WILL DEPEND ON THIS UPPER LIMIT AS WELL AS THE MEMORY REQUIRED TO MINIMIZE
+          I/O. IF THE MEMORY UPPER LIMIT IS GREATER THAN THE MEMORY REQUIRED TO MINIMIZE I/O, THEN THE ACTUAL
+          MEMORY USAGE WILL BE CLOSE TO THE ESTIMATED "MEMORY TO MINIMIZE I/O" VALUE, AND THE SCRATCH DISK
+          USAGE WILL BE CLOSE-TO-ZERO; OTHERWISE, THE ACTUAL MEMORY USED WILL BE CLOSE TO THE PREVIOUSLY
+          MENTIONED MEMORY LIMIT, AND THE SCRATCH DISK USAGE WILL BE ROUGHLY PROPORTIONAL TO THE DIFFERENCE
+          BETWEEN THE ESTIMATED "MEMORY TO MINIMIZE I/O" AND THE MEMORY UPPER LIMIT. HOWEVER ACCURATE
+          ESTIMATE OF THE SCRATCH DISK SPACE IS NOT POSSIBLE.
+      (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
+
+
+          THE ANALYSIS HAS BEEN COMPLETED
+
+
+
+                              ANALYSIS COMPLETE
+                              WITH     13 WARNING MESSAGES ON THE DAT FILE
+                              AND      43 WARNING MESSAGES ON THE MSG FILE
+                                        4 WARNINGS ARE FOR NEGATIVE EIGENVALUES
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =   11.700    
+       SYSTEM TIME (SEC)    =  0.80000    
+       TOTAL CPU TIME (SEC) =   12.500    
+       WALLCLOCK TIME (SEC) =         13

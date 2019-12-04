@@ -1,0 +1,13 @@
+Abaqus JOB Job-1
+Abaqus Student Edition 6.13-2
+Begin Analysis Input File Processor
+20.11.2019 13:52:02
+Run pre.exe
+20.11.2019 13:52:04
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+20.11.2019 13:52:04
+Run standard.exe
+20.11.2019 13:52:22
+End Abaqus/Standard Analysis
+Abaqus JOB Job-1 COMPLETED
