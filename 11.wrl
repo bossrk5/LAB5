@@ -1,0 +1,85 @@
+#VRML V2.0 utf8
+
+#Writing the Center of rotation
+NavigationInfo{
+avatarSize [ 3.40282e+038 3.40282e+038 3.40282e+038,1.70141e+038 1.70141e+038 1.70141e+038]
+speed 1 }
+Group {
+children[# Writing Viewpoint Data
+Viewpoint{
+position 0 0 4
+orientation 1 0 0 0
+description "Iso View"
+fieldOfView 0.513417
+}
+
+# Writing Viewpoint Data
+Viewpoint{
+position -1.#IND -1.#IND -1.#IND
+orientation 1.#QNAN 1.#QNAN 1.#QNAN 1.#QNAN
+description "Front View"
+fieldOfView 0
+}
+
+# Writing Viewpoint Data
+Viewpoint{
+position -1.#IND -1.#IND -1.#IND
+orientation 1.#QNAN 1.#QNAN 1.#QNAN 1.#QNAN
+description "Back View"
+fieldOfView 0
+}
+
+# Writing Viewpoint Data
+Viewpoint{
+position -1.#IND -1.#IND -1.#IND
+orientation 1.#QNAN 1.#QNAN 1.#QNAN 1.#QNAN
+description "Top View"
+fieldOfView 0
+}
+
+# Writing Viewpoint Data
+Viewpoint{
+position -1.#IND -1.#IND -1.#IND
+orientation 1.#QNAN 1.#QNAN 1.#QNAN 1.#QNAN
+description "Bottom View"
+fieldOfView 0
+}
+
+# Writing Viewpoint Data
+Viewpoint{
+position -1.#IND -1.#IND -1.#IND
+orientation 1.#QNAN 1.#QNAN 1.#QNAN 1.#QNAN
+description "Left View"
+fieldOfView 0
+}
+
+# Writing Viewpoint Data
+Viewpoint{
+position -1.#IND -1.#IND -1.#IND
+orientation 1.#QNAN 1.#QNAN 1.#QNAN 1.#QNAN
+description "Right View"
+fieldOfView 0
+}
+
+]}
+Group {
+children [
+#Writing the Polygon data
+Transform {
+scale 1 1 1
+	children [
+		Shape {
+			geometry IndexedFaceSet {
+				 coord #Writing the Array of Vertices
+DEF VertexArray Coordinate{
+point [
+]
+	}
+				 coordIndex [
+				 ]
+			}
+		}
+	]
+}
+
+]}
